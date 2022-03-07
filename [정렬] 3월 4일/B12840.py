@@ -4,33 +4,35 @@ input = sys.stdin.readline
 S = 60
 M = 60
 H = 24
-
-def cal_time(t, n, c):
+def show_time(s):
+    s %= (H * M * S)
     
+    h = s // (M * S)
+    s %= (M * S)
+    m = s // S
+    s %= S
+    
+    print(h, m, s)
+    
+def cal_time(t, n, c):
     if t == 1:
         n += c
     else:
         n -= c
-        
-    n %= (H * M * S)
-    
-    h = n // (M * S)
-    n %= (M * S)
-    m = n // S
-    n %= S
-    return h, m, n
+    return n
     
 def solution():
     h, m, s = map(int, input().split())
+    n = h * M * S + m * S + s
+    
     q = int(input())
     for i in range(q):
         query = input().rstrip()
         if len(query)==1:
-             print(h, m, s)
+             show_time(n)
         else:
             t, c = map(int, query.split())
-            n = h * M * S + m * S + s
-            h, m, s = cal_time(t, n, c)
+            n = cal_time(t, n, c)
 
 if __name__ == "__main__":
     solution()
