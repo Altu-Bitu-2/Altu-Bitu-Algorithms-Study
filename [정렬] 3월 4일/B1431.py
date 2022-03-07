@@ -10,10 +10,13 @@ def sum_digits(serial_number):
     
 def solution():
     n = int(input())
-    guiter = []
-    for _ in range(n):
-        guiter.append(input().strip())
     
+    # guiter = []
+    # for _ in range(n):
+    #     guiter.append(input().strip())
+    
+    guiter = [input().strip() for _ in range(n)]
+
     guiter.sort(key=lambda x: (len(x), sum_digits(x), x))
     
     for serial_number in guiter:

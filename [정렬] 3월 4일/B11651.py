@@ -3,11 +3,13 @@ input = sys.stdin.readline
 
 def solution():
     n = int(input())
-    dots = []
+    # dots = []
     
-    for _ in range(n):
-        x, y = map(int, input().split())
-        dots.append((x, y))
+    # for _ in range(n):
+    #     x, y = map(int, input().split())
+    #     dots.append((x, y))
+    
+    dots = [tuple(map(int, input().split())) for _ in range(n)]
     
     dots.sort(key=lambda x: (x[1], x[0]))
     
