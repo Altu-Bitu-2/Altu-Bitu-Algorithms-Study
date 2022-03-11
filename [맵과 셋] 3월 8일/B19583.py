@@ -18,7 +18,6 @@ def solution():
                 if nickname in attendees:
                     attendees.discard(nickname)
                     cnt += 1
-
         except:
             break
     
