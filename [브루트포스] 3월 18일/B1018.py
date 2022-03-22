@@ -14,23 +14,15 @@ def count_square(start_i, start_j):
     
 def make_targets():
     board = [[] for _ in range(2)]
-    for i in range(8):
-        tmp = []
-        for j in range(8):
-            if (i+j) % 2:
-                tmp.append('W')
-            else:
-                tmp.append('B')
-        board[0].append(tmp)
-        
-    for i in range(8):
-        tmp = []
-        for j in range(8):
-            if (i+j) % 2==0:
-                tmp.append('W')
-            else:
-                tmp.append('B')
-        board[1].append(tmp)    
+    for t in range(2):
+        for i in range(8):
+            tmp = []
+            for j in range(8):
+                if (i+j+t) % 2:
+                    tmp.append('W')
+                else:
+                    tmp.append('B')
+            board[t].append(tmp)
     
     return board
     
