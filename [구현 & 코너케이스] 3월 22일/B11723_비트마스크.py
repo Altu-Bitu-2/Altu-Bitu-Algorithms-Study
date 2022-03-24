@@ -1,4 +1,5 @@
 # 비트마스크로 접근
+# 어려웠던 점:
 # pypy3으로 제출하면 메모리 초과가 남
 # python3으로 제출해서 해결
 
@@ -12,13 +13,14 @@ def solution():
     for _ in range(m):
         op = input().strip().split()
         
-        if len(op) == 1:
+        if len(op) == 1: # 단어 수 1개인 연산들
             if op[0] == "all":
                 s = ~(1 << 21)
-            else:
+            else: # empty
                 s = 0
             continue
         
+        # 단어 수 2개인 연산들
         op, x = op
         x = int(x)
         
