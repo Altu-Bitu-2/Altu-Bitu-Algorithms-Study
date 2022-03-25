@@ -1,20 +1,15 @@
 import sys
 input = sys.stdin.readline
 
-def available_size(x, y):
-    for size in range(5, 0, -1):
-        if x + size > 9 or y + size > 9: continue
-        
-        flag = False
-        for i in range(x, x + size):
-            if flag: break
-            for j in range(y, y + size):
-                if paper[i][j] == 0:
-                    flag = True
-                    break
-        if not flag: return True, size
-    
-    return False, 0
+def check_size(x, y, size):
+    avail = True
+    for i in range(x, x + size):
+        for j in range(y, y + size):
+            if paper[i][j] == 0:
+                avail = False
+                break
+        if not avail: break
+    return avail
 
 def operate(x, y, size):
     for i in range(size):
@@ -40,18 +35,9 @@ def backtracking(idx, cnt):
         
         if colored_papers[size] == 0: continue # 종이 없음
         if x + size > 10 or y + size > 10: continue # 범위 벗어남
-        
-        # 맞는 사이즈 찾기
-        flag = False
-        for i in range(x, x + size):
-            for j in range(y, y + size):
-                if paper[i][j] == 0:
-                    flag = True
-                    break
-            if flag: break
-         
-        # 사이즈 맞음
-        if not flag:        
+
+        # 사이즈 맞다면
+        if check_size(x, y, size):        
             operate(x, y, size) # 붙이기
             colored_papers[size] -= 1
             backtracking(idx+1, cnt+1)
