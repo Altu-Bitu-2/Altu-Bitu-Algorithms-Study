@@ -9,13 +9,8 @@ def check(x, y):
         numbers.discard(stoku[i][y]) # 세로줄
         # 3x3 정사각형
         s, t = (x//3) * 3 + (i//3), (y//3) * 3 + (i % 3)
-        numbers.discard(stoku[s][t]) 
-        
-    for i in range(x//3 * 3, (x//3 + 1) * 3):
-        for j in range(y//3 * 3, (y//3 + 1) * 3):
-            if stoku[i][j] in numbers:
-                numbers.discard(stoku[i][j])
-                
+        numbers.discard(stoku[s][t])
+
     return numbers
 
 def backtracking(cnt):
