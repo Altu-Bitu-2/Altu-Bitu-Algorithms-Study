@@ -28,8 +28,8 @@
 | 2022.05.03 |     최단 경로     |                   [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/05%EC%9B%94%2003%EC%9D%BC%20-%20%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C)                   |  ✅  |
 | 2022.05.10 | 구현 & 코너케이스 | [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/05%EC%9B%94%2010%EC%9D%BC%20-%20%EA%B5%AC%ED%98%84%20%26%20%EC%BD%94%EB%84%88%EC%BC%80%EC%9D%B4%EC%8A%A4) |  ❎  |
 | 2022.05.17 |       트리        |                            [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/05%EC%9B%94%2017%EC%9D%BC%20-%20%ED%8A%B8%EB%A6%AC)                            |  ✅  |
-| 2022.05.24 |   유니온 파인드   |
-| 2022.05.31 |  최소 신장 트리   |
-| 2022.06.07 |     위상 정렬     |
+| 2022.05.24 |   유니온 파인드   | [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/05%EC%9B%94%2024%EC%9D%BC%20-%20%EC%9C%A0%EB%8B%88%EC%98%A8%20%ED%8C%8C%EC%9D%B8%EB%93%9C) |  ✅  |
+| 2022.05.31 |  최소 신장 트리   | [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/05%EC%9B%94%2031%EC%9D%BC%20-%20%EC%B5%9C%EC%86%8C%20%EC%8B%A0%EC%9E%A5%20%ED%8A%B8%EB%A6%AC) |  ✅  |
+| 2022.06.07 |     위상 정렬     | [바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/06%EC%9B%94%2007%EC%9D%BC%20-%20%EC%9C%84%EC%83%81%20%EC%A0%95%EB%A0%AC) |  ✅  |
 
 ---
